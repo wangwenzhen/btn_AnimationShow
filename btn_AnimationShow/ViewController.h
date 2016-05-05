@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef NS_ENUM(NSUInteger, animationType){
+      animationTypeShowUp = 100,
+      animationTypeShowLeft,
+      animationTypeShowRight,
+      animationTypeShowLevel
+}btnAnimationType;
 @interface ViewController : UIViewController
-
+@property (nonatomic, assign)animationType animationType;
 
 @end
 
